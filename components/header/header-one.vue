@@ -2,7 +2,9 @@
   <header>
     <div class="tp-header-area p-relative z-index-11">
       <!-- header top start  -->
-      <div class="tp-header-top black-bg p-relative z-index-1 d-none d-md-block">
+      <div
+        class="tp-header-top black-bg p-relative z-index-1 d-none d-md-block"
+      >
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
@@ -14,7 +16,9 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="tp-header-top-right d-flex align-items-center justify-content-end">
+              <div
+                class="tp-header-top-right d-flex align-items-center justify-content-end"
+              >
                 <header-component-top-menu />
               </div>
             </div>
@@ -67,7 +71,9 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-3">
-                <div class="tp-header-contact d-flex align-items-center justify-content-end">
+                <div
+                  class="tp-header-contact d-flex align-items-center justify-content-end"
+                >
                   <div class="tp-header-contact-icon">
                     <span>
                       <svg-contact />
@@ -86,19 +92,24 @@
     </div>
 
     <!-- header sticky start -->
-    <div id="header-sticky-2" :class="`tp-header-sticky-area ${isSticky ? 'header-sticky-2' : ''}`">
+    <div
+      id="header-sticky-2"
+      :class="`tp-header-sticky-area ${isSticky ? 'header-sticky-2' : ''}`"
+    >
       <div class="container">
         <div class="tp-mega-menu-wrapper p-relative">
           <div class="row align-items-center">
             <div class="col-xl-3 col-lg-3 col-md-3 col-6">
               <div class="logo">
                 <nuxt-link href="/">
-                  <img src="/img/logo/logo.svg" alt="logo">
+                  <img src="/img/logo/logo.svg" alt="logo" />
                 </nuxt-link>
               </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6">
-              <div class="tp-header-sticky-menu main-menu menu-style-1 d-none d-lg-block">
+              <div
+                class="tp-header-sticky-menu main-menu menu-style-1 d-none d-lg-block"
+              >
                 <nav id="mobile-menu">
                   <!-- menus start -->
                   <header-component-menus />
@@ -107,7 +118,9 @@
               </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-3 col-6">
-              <div class="tp-header-action d-flex align-items-center justify-content-end ml-50">
+              <div
+                class="tp-header-action d-flex align-items-center justify-content-end ml-50"
+              >
                 <div class="tp-header-action-item d-none d-lg-block">
                   <nuxt-link href="/compare" class="tp-header-action-btn">
                     <svg-compare />
@@ -116,17 +129,29 @@
                 <div class="tp-header-action-item d-none d-lg-block">
                   <nuxt-link href="/wishlist" class="tp-header-action-btn">
                     <svg-wishlist />
-                    <span class="tp-header-action-badge">{{wishlistStore.wishlists.length}}</span>
+                    <span class="tp-header-action-badge">{{
+                      wishlistStore.wishlists.length
+                    }}</span>
                   </nuxt-link>
                 </div>
                 <div class="tp-header-action-item">
-                  <button @click="cartStore.handleCartOffcanvas" type="button" class="tp-header-action-btn cartmini-open-btn">
+                  <button
+                    @click="cartStore.handleCartOffcanvas"
+                    type="button"
+                    class="tp-header-action-btn cartmini-open-btn"
+                  >
                     <svg-cart-bag />
-                    <span class="tp-header-action-badge">{{ cartStore.totalPriceQuantity.quantity }}</span>
+                    <span class="tp-header-action-badge">{{
+                      cartStore.totalPriceQuantity.quantity
+                    }}</span>
                   </button>
                 </div>
                 <div class="tp-header-action-item d-lg-none">
-                  <button @click="utilsStore.handleOpenMobileMenu()" type="button" class="tp-header-action-btn tp-offcanvas-open-btn">
+                  <button
+                    @click="utilsStore.handleOpenMobileMenu()"
+                    type="button"
+                    class="tp-header-action-btn tp-offcanvas-open-btn"
+                  >
                     <svg-menu-icon />
                   </button>
                 </div>
@@ -139,20 +164,20 @@
     <!-- header sticky end -->
   </header>
   <!-- cart offcanvas start -->
-  <offcanvas-cart-sidebar/>
+  <offcanvas-cart-sidebar />
   <!-- cart offcanvas end -->
 
   <!-- cart offcanvas start -->
-  <offcanvas-mobile-sidebar product-type="electronics"/>
+  <offcanvas-mobile-sidebar product-type="electronics" />
   <!-- cart offcanvas end -->
 </template>
 
 <script setup lang="ts">
-import { useCartStore } from '@/pinia/useCartStore';
-import { useWishlistStore } from '@/pinia/useWishlistStore';
-import { useUtilityStore} from '@/pinia/useUtilityStore';
+import { useCartStore } from "@/pinia/useCartStore";
+import { useWishlistStore } from "@/pinia/useWishlistStore";
+import { useUtilityStore } from "@/pinia/useUtilityStore";
 
-const {isSticky} = useSticky();
+const { isSticky } = useSticky();
 const cartStore = useCartStore();
 const wishlistStore = useWishlistStore();
 const utilsStore = useUtilityStore();

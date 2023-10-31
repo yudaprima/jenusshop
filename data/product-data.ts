@@ -6,6 +6,7 @@ const product_data: IProduct[] = [
     sku: "NTB7SDVX44",
     img: "https://i.ibb.co/WVdTgR8/headphone-1.png",
     title: "Headphones Wireless.",
+    shopeeLink: "https://shopee.com",
     slug: "headphones-wireless.",
     unit: "3pcs",
     imageURLs: [
@@ -121,6 +122,7 @@ const product_data: IProduct[] = [
     sku: "NVB7SDVX45",
     img: "https://i.ibb.co/n1YRvWJ/headphone-5.png",
     title: "Gaming Headphone",
+    shopeeLink: "https://shopee.com",
     slug: "gaming-headphone",
     unit: "5pcs",
     imageURLs: [
@@ -224,6 +226,7 @@ const product_data: IProduct[] = [
     sku: "BVB7SDVX50",
     img: "https://i.ibb.co/5FPhGtq/headphone-8.png",
     title: "Headphone with Mic",
+    shopeeLink: "https://shopee.com",
     slug: "headphone-with-mic",
     unit: "4pcs",
     imageURLs: [
@@ -333,6 +336,7 @@ const product_data: IProduct[] = [
     sku: "BD7SDVX62",
     img: "https://i.ibb.co/jvGv6qf/mobile-1.png",
     title: "Galaxy Android Tablet",
+    shopeeLink: "https://shopee.com",
     slug: "galaxy-android-tablet",
     unit: "8pcs",
     imageURLs: [
@@ -439,6 +443,7 @@ const product_data: IProduct[] = [
     sku: "AF7SDVX65",
     img: "https://i.ibb.co/3WMPkkf/mobile-5.png",
     title: "iPhone 14 Pro",
+    shopeeLink: "https://shopee.com",
     slug: "iPhone-14-pro",
     unit: "10pcs",
     imageURLs: [
@@ -545,6 +550,7 @@ const product_data: IProduct[] = [
     sku: "CF7SDVX72",
     img: "https://i.ibb.co/kxGMcrw/ipad-1.png",
     title: "Apple iPad Air",
+    shopeeLink: "https://shopee.com",
     slug: "apple-iPad-air",
     unit: "12pcs",
     imageURLs: [
@@ -644,6 +650,7 @@ const product_data: IProduct[] = [
     sku: "DF7SDVX72",
     img: "https://i.ibb.co/wYZr4k6/cpu-1.png",
     title: "DeepCool Air Cooler",
+    shopeeLink: "https://shopee.com",
     slug: "deepCool-air-cooler",
     unit: "15pcs",
     imageURLs: [
@@ -750,6 +757,7 @@ const product_data: IProduct[] = [
     sku: "DF7SDVX75",
     img: "https://i.ibb.co/tpypd3B/cpu-5.png",
     title: "Antec Air Cooler",
+    shopeeLink: "https://shopee.com",
     slug: "antec-air-cooler",
     unit: "15pcs",
     imageURLs: [
@@ -860,6 +868,7 @@ const product_data: IProduct[] = [
     sku: "EF7SDVX72",
     img: "https://i.ibb.co/yRRLCc5/watch-1.png",
     title: "Apple Watch Sport Band",
+    shopeeLink: "https://shopee.com",
     slug: "apple-watch-sport-band",
     unit: "18pcs",
     imageURLs: [
@@ -967,6 +976,7 @@ const product_data: IProduct[] = [
     sku: "EF7SDVX73",
     img: "https://i.ibb.co/j4sDV3Q/watch-5.png",
     title: "Sony Smart Watch",
+    shopeeLink: "https://shopee.com",
     slug: "sony-smart-watch",
     unit: "12pcs",
     imageURLs: [
@@ -1073,6 +1083,7 @@ const product_data: IProduct[] = [
     sku: "EG8SDVX74",
     img: "https://i.ibb.co/fMhtt2T/watch-9.png",
     title: "Sony Lady Fitness Watch",
+    shopeeLink: "https://shopee.com",
     slug: "sony-lady-fitness-watch",
     unit: "10pcs",
     imageURLs: [
@@ -1174,6 +1185,7 @@ const product_data: IProduct[] = [
     sku: "DG8SDVX32",
     img: "https://i.ibb.co/RYST3Ym/blutooth-4.png",
     title: "Lenovo Wireless Bluetooth",
+    shopeeLink: "https://shopee.com",
     slug: "lenovo-wireless-bluetooth",
     unit: "7pcs",
     imageURLs: [
@@ -1254,6 +1266,7 @@ const product_data: IProduct[] = [
     sku: "DF8SDVX33",
     img: "https://i.ibb.co/fvXHr2Y/blutooth-1.png",
     title: "Lenovo Sports Bluetooth",
+    shopeeLink: "https://shopee.com",
     slug: "lenovo-sports-bluetooth",
     unit: "7pcs",
     imageURLs: [
@@ -1357,6 +1370,7 @@ const product_data: IProduct[] = [
     sku: "FAB7SDVX44",
     img: "https://i.ibb.co/gg9yCwX/clothing-1.png",
     title: "Whitetails Women's Dress",
+    shopeeLink: "https://shopee.com",
     slug: "whitetails-women's-dress",
     unit: "10pcs",
     imageURLs: [
@@ -1445,6 +1459,7 @@ const product_data: IProduct[] = [
     sku: "FBB7SDVX45",
     img: "https://i.ibb.co/xXHLYZr/clothing-5.png",
     title: "Boys Graphic T-Shirt",
+    shopeeLink: "https://shopee.com",
     slug: "boys-graphic-t-shirt",
     unit: "12pcs",
     imageURLs: [
@@ -1532,6 +1547,7 @@ const product_data: IProduct[] = [
     sku: "FCB7SDVX46",
     img: "https://i.ibb.co/DKJr0w4/clothing-9.png",
     title: "Milumia Blouse",
+    shopeeLink: "https://shopee.com",
     slug: "milumia-blouse",
     unit: "17pcs",
     imageURLs: [
@@ -1620,6 +1636,7 @@ const product_data: IProduct[] = [
     sku: "ECB7SDVX56",
     img: "https://i.ibb.co/GvXjssF/bag-1.png",
     title: "Tall Easy Tote-2",
+    shopeeLink: "https://shopee.com",
     slug: "tall-easy-tote-2",
     unit: "5pcs",
     imageURLs: [
@@ -1707,6 +1724,7 @@ const product_data: IProduct[] = [
     sku: "ECB7SDVX62",
     img: "https://i.ibb.co/zrdMnPd/bag-5.png",
     title: "Traveling Bag",
+    shopeeLink: "https://shopee.com",
     slug: "traveling-bag",
     unit: "5pcs",
     imageURLs: [
@@ -1795,6 +1813,7 @@ const product_data: IProduct[] = [
     sku: "DCB7SDVX64",
     img: "https://i.ibb.co/xgPThxC/shoes-1.png",
     title: "Nike Retro GTS-2",
+    shopeeLink: "https://shopee.com",
     slug: "nike-retro-gts-2",
     unit: "4pcs",
     imageURLs: [
@@ -1882,6 +1901,7 @@ const product_data: IProduct[] = [
     sku: "GCB7SDVX72",
     img: "https://i.ibb.co/SQY6zdb/shoes-5.png",
     title: "Jefferson Star Wars™",
+    shopeeLink: "https://shopee.com",
     slug: "jefferson-star-wars™",
     unit: "4pcs",
     imageURLs: [
@@ -1970,6 +1990,7 @@ const product_data: IProduct[] = [
     sku: "FCB7SDVX55",
     img: "https://i.ibb.co/ThxGY6N/clothing-13.png",
     title: "Baby Cotton Bodysuits",
+    shopeeLink: "https://shopee.com",
     slug: "baby-cotton-bodysuits",
     unit: "12pcs",
     imageURLs: [
@@ -2057,6 +2078,7 @@ const product_data: IProduct[] = [
     sku: "DCB7SDVX60",
     img: "https://i.ibb.co/qNn6Pqy/powder-1.png",
     title: "INIKA Mineral Sunkissed",
+    shopeeLink: "https://shopee.com",
     slug: "inika-mineral-sunkissed",
     unit: "15pcs",
     imageURLs: [
@@ -2145,6 +2167,7 @@ const product_data: IProduct[] = [
     sku: "DEB7SDVX62",
     img: "https://i.ibb.co/whwFFGX/lip-liner-1.png",
     title: "Grand Plumping Highlighter",
+    shopeeLink: "https://shopee.com",
     slug: "grand-plumping-highlighter",
     unit: "10pcs",
     imageURLs: [
@@ -2225,6 +2248,7 @@ const product_data: IProduct[] = [
     sku: "DFB7SDVX62",
     img: "https://i.ibb.co/vmJzZk4/cosmetics-1.png",
     title: "Brand Cosmetic Product",
+    shopeeLink: "https://shopee.com",
     slug: "brand-cosmetic-product",
     unit: "12pcs",
     imageURLs: [
@@ -2306,6 +2330,7 @@ const product_data: IProduct[] = [
     sku: "DGB7SDVX62",
     img: "https://i.ibb.co/p06Mk0H/makeup-1.png",
     title: "Wet Dewy Cream Beige",
+    shopeeLink: "https://shopee.com",
     slug: "wet-dewy-cream-beige",
     unit: "12pcs",
     imageURLs: [
@@ -2393,6 +2418,7 @@ const product_data: IProduct[] = [
     sku: "EGB7SDVX68",
     img: "https://i.ibb.co/mvRsPK5/cosmetics-4.png",
     title: "Tea Tree Lemon For Fine Hair",
+    shopeeLink: "https://shopee.com",
     slug: "tea-tree-lemon-for-fine-hair",
     unit: "100ml",
     imageURLs: [
@@ -2473,6 +2499,7 @@ const product_data: IProduct[] = [
     sku: "FGB7SDVX68",
     img: "https://i.ibb.co/bdKTWYy/skin-1.png",
     title: "Mielle Rosemary Mint Scalp",
+    shopeeLink: "https://shopee.com",
     slug: "mielle-rosemary-mint-scalp",
     unit: "200ml",
     imageURLs: [
@@ -2553,6 +2580,7 @@ const product_data: IProduct[] = [
     sku: "FCB7SDVX68",
     img: "https://i.ibb.co/T04BRtd/cream-1.png",
     title: "Innisfree Face Wash",
+    shopeeLink: "https://shopee.com",
     slug: "innisfree face wash",
     unit: "150ml",
     imageURLs: [
@@ -2633,6 +2661,7 @@ const product_data: IProduct[] = [
     sku: "FEB7SDVX68",
     img: "https://i.ibb.co/XsZ9vLT/beauty-1.png",
     title: "Blue Rescue Face Mask",
+    shopeeLink: "https://shopee.com",
     slug: "blue-rescue-face-mask",
     unit: "150ml",
     imageURLs: [
@@ -2713,6 +2742,7 @@ const product_data: IProduct[] = [
     sku: "AEB7SDVX70",
     img: "https://i.ibb.co/J7C8xSR/bracelet-1.png",
     title: "Robert Lee Bangle Bracelet",
+    shopeeLink: "https://shopee.com",
     slug: "robert-lee-bangle-bracelet",
     unit: "18 kt",
     imageURLs: [
@@ -2766,6 +2796,7 @@ const product_data: IProduct[] = [
     sku: "ABC7SDVX70",
     img: "https://i.ibb.co/s2gB5tt/earring-1.png",
     title: "Fortuna Creole Earring",
+    shopeeLink: "https://shopee.com",
     slug: "fortuna-creole-earring",
     unit: "18 kt",
     imageURLs: [
@@ -2818,6 +2849,7 @@ const product_data: IProduct[] = [
     sku: "ADC7SDVX70",
     img: "https://i.ibb.co/KsZ69S3/necklaces-1.png",
     title: "asiyah necklace",
+    shopeeLink: "https://shopee.com",
     slug: "asiyah-necklace",
     unit: "15 kt",
     imageURLs: [
@@ -2871,6 +2903,7 @@ const product_data: IProduct[] = [
     sku: "AEC7SDVX70",
     img: "https://i.ibb.co/nnxXBTh/bracelet-4.png",
     title: "Fortuna Bangle Three-row",
+    shopeeLink: "https://shopee.com",
     slug: "fortuna-bangle-three-row",
     unit: "14 kt",
     imageURLs: [
@@ -2926,6 +2959,7 @@ const product_data: IProduct[] = [
     sku: "BAC7SDVX70",
     img: "https://i.ibb.co/s12Fy6m/earring-4.png",
     title: "Palm Ring",
+    shopeeLink: "https://shopee.com",
     slug: "palm-ring",
     unit: "18 kt",
     imageURLs: [
@@ -2981,6 +3015,7 @@ const product_data: IProduct[] = [
     sku: "BCC7SDVX54",
     img: "https://i.ibb.co/cwzhf2G/necklaces-4.png",
     title: "Birthstone Necklace for Women",
+    shopeeLink: "https://shopee.com",
     slug: "birthstone-necklace-for-women",
     unit: "14 kt",
     imageURLs: [
@@ -3033,6 +3068,7 @@ const product_data: IProduct[] = [
     sku: "BAD7SDVX55",
     img: "https://i.ibb.co/SvdvsxT/bracelet-8.png",
     title: "Asiyah Bangle Bracelet",
+    shopeeLink: "https://shopee.com",
     slug: "asiyah-bangle-bracelet",
     unit: "10 kt",
     imageURLs: [
@@ -3085,6 +3121,7 @@ const product_data: IProduct[] = [
     sku: "BDC7SDVX88",
     img: "https://i.ibb.co/Bf0gXqY/earring-8.png",
     title: "Fortuna Creole Hoop",
+    shopeeLink: "https://shopee.com",
     slug: "fortuna-creole-hoop",
     unit: "12 kt",
     imageURLs: [

@@ -2,6 +2,7 @@
   <div>
     <header-one />
     <main>
+      <!-- slot diisi untuk child component agar lebih dinamis -->
       <slot />
     </main>
     <footer-one />

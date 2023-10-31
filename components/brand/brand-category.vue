@@ -1,7 +1,12 @@
 <template>
-  <section class="tp-brand-area pt-120">
-    <div class="container">
+  <section class="tp-brand-area pt-40 pb-40">
+    <div class="container mb-40">
       <div class="row">
+        <div class="col-12">
+          <div class="tp-section-title-wrapper mb-40">
+            <h3 class="tp-section-title">Brand Official <SvgSectionLine /></h3>
+          </div>
+        </div>
         <div class="col-xl-12">
           <div class="tp-brand-slider p-relative">
             <Swiper
@@ -59,12 +64,19 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper/modules";
 // brand data
 const brand_data = [
+  "/img/brand/adata.png",
+  "/img/brand/galax.png",
+  "/img/brand/bequiet.png",
   "/img/brand/logo_01.png",
   "/img/brand/logo_02.png",
   "/img/brand/logo_03.png",
   "/img/brand/logo_04.png",
   "/img/brand/logo_05.png",
-  "/img/brand/logo_02.png",
-  "/img/brand/logo_04.png",
 ];
 </script>
+
+<style scoped>
+.tp-brand-slider img {
+  width: 100px;
+}
+</style>

@@ -1,5 +1,9 @@
 <template>
-  <div :class="`${offer_style ? 'tp-product-offer-item' : 'mb-25'} tp-product-item transition-3`">
+  <div
+    :class="`${
+      offer_style ? 'tp-product-offer-item' : 'mb-25'
+    } tp-product-item transition-3`"
+  >
     <div class="tp-product-thumb p-relative fix m-img">
       <nuxt-link :href="`/product-details/${item.id}`">
         <img :src="item.img" alt="product-electronic" />
@@ -7,7 +11,9 @@
 
       <!-- product badge -->
       <div class="tp-product-badge">
-        <span v-if="item.status === 'out-of-stock'" class="product-hot">out-of-stock</span>
+        <span v-if="item.status === 'out-of-stock'" class="product-hot"
+          >out-of-stock</span
+        >
       </div>
 
       <!-- product action -->
@@ -18,7 +24,9 @@
             @click="cartStore.addCartProduct(item)"
             type="button"
             :class="`tp-product-action-btn tp-product-add-cart-btn ${
-              cartStore.cart_products.some((prd) => prd.id === item.id) ? 'active' : ''
+              cartStore.cart_products.some((prd) => prd.id === item.id)
+                ? 'active'
+                : ''
             }`"
           >
             <svg-add-cart />
@@ -29,7 +37,9 @@
             @click="cartStore.addCartProduct(item)"
             href="/cart"
             :class="`tp-product-action-btn tp-product-add-cart-btn ${
-              cartStore.cart_products.some((prd) => prd.id === item.id)? 'active': ''
+              cartStore.cart_products.some((prd) => prd.id === item.id)
+                ? 'active'
+                : ''
             }`"
           >
             <svg-add-cart />
@@ -41,7 +51,9 @@
             class="tp-product-action-btn tp-product-quick-view-btn"
             data-bs-toggle="modal"
             :data-bs-target="`#${utilityStore.modalId}`"
-            @click="utilityStore.handleOpenModal(`product-modal-${item.id}`,item)"
+            @click="
+              utilityStore.handleOpenModal(`product-modal-${item.id}`, item)
+            "
           >
             <svg-quick-view />
             <span class="tp-product-tooltip">Quick View</span>
@@ -49,18 +61,34 @@
           <button
             @click="wishlistStore.add_wishlist_product(item)"
             type="button"
-            :class="`tp-product-action-btn tp-product-add-to-wishlist-btn ${wishlistStore.wishlists.some((prd) => prd.id === item.id)? 'active': ''}`"
+            :class="`tp-product-action-btn tp-product-add-to-wishlist-btn ${
+              wishlistStore.wishlists.some((prd) => prd.id === item.id)
+                ? 'active'
+                : ''
+            }`"
           >
             <svg-wishlist />
             <span class="tp-product-tooltip">Add To Wishlist</span>
           </button>
+          <a
+            :href="item.shopeeLink"
+            target="_blank"
+            type="button"
+            class="tp-product-action-btn tp-product-quick-view-btn"
+          >
+            <img class="icon" width="20" src="/img/icon/sp.png" alt="" />
+            <!-- <svg-wishlist /> -->
+            <span class="tp-product-tooltip">View Product</span>
+          </a>
         </div>
       </div>
     </div>
     <!-- product content -->
     <div class="tp-product-content">
       <div class="tp-product-category">
-        <nuxt-link :href="`/product-details/${item.id}`">{{ item.category.name }}</nuxt-link>
+        <nuxt-link :href="`/product-details/${item.id}`">{{
+          item.category.name
+        }}</nuxt-link>
       </div>
       <h3 class="tp-product-title">
         <nuxt-link :href="`/product-details/${item.id}`">
@@ -76,17 +104,24 @@
           <span><i class="fa-solid fa-star-half-stroke"></i></span>
         </div>
         <div class="tp-product-rating-text">
-          <span>({{item.reviews?.length}} Review)</span>
+          <span>({{ item.reviews?.length }} Review)</span>
         </div>
       </div>
       <div class="tp-product-price-wrapper">
         <div v-if="item.discount > 0">
           <span class="tp-product-price old-price">${{ item.price }}</span>
           <span class="tp-product-price new-price">
-            ${{(Number(item.price) - (Number(item.price) * Number(item.discount)) / 100).toFixed(2)}}
+            ${{
+              (
+                Number(item.price) -
+                (Number(item.price) * Number(item.discount)) / 100
+              ).toFixed(2)
+            }}
           </span>
         </div>
-        <span v-else class="tp-product-price new-price">${{ item.price.toFixed(2) }}</span>
+        <span v-else class="tp-product-price new-price"
+          >${{ item.price.toFixed(2) }}</span
+        >
       </div>
 
       <div class="tp-product-countdown" v-if="offer_style">
@@ -130,3 +165,9 @@ if (props.item.offerDate) {
   timer = useTimer(endTimeMs);
 }
 </script>
+
+<style scoped>
+.tp-product-action-btn .icon {
+  width: 20px !important;
+}
+</style>

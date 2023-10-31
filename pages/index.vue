@@ -17,6 +17,9 @@
       <product-electronics-top-items />
       <!-- product area end -->
 
+      <!-- brand area start -->
+      <brand-category />
+
       <!-- banner area start -->
       <banner-area />
       <!-- banner area en -->
@@ -41,16 +44,12 @@
       <product-electronics-sm-items />
       <!-- product sm items end -->
 
-      <!-- blog item start -->
-      <blog-electronic/>
-      <!-- blog item end -->
-
       <!-- instagram area start -->
-      <instagram-area-1/>
+      <instagram-area-1 />
       <!-- instagram area end -->
 
       <!-- subscribe area start -->
-      <subscribe-1/>
+      <subscribe-1 />
       <!-- subscribe area end -->
     </nuxt-layout>
   </div>
