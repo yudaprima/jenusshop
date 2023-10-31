@@ -92,13 +92,6 @@
           >
             view cart
           </nuxt-link>
-          <nuxt-link
-            href="/checkout"
-            @click="cartStore.handleCartOffcanvas"
-            class="tp-btn tp-btn-border w-100"
-          >
-            checkout
-          </nuxt-link>
         </div>
       </div>
     </div>

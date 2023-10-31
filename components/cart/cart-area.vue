@@ -77,7 +77,7 @@
                   <span>${{(cartStore.totalPriceQuantity.total + shipCost).toFixed(2)}}</span>
               </div>
               <div class="tp-cart-checkout-proceed">
-                  <nuxt-link href="/checkout" class="tp-cart-checkout-btn w-100">Proceed to Checkout</nuxt-link>
+                  <nuxt-link href="#" class="tp-cart-checkout-btn w-100">Proceed to Checkout</nuxt-link>
               </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <template>
   <div>
       <!-- breadcrumb start -->
-      <breadcrumb-4 title="Wishlist" subtitle="Wishlist"/>
+      <breadcrumb-default title="Wishlist" subtitle="Wishlist"/>
       <!-- breadcrumb end -->
 
       <!-- wishlist area start -->

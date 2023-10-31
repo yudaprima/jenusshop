@@ -1,7 +1,7 @@
 <template>
   <div>
       <!-- breadcrumb start -->
-      <breadcrumb-4 title="Compare" subtitle="Compare"/>
+      <breadcrumb-default title="Compare" subtitle="Compare"/>
       <!-- breadcrumb end -->
 
       <!-- compare area start -->

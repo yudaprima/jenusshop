@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- breadcrumb start -->
-    <breadcrumb-4 title="Shop Categories" subtitle="Shop Categories" />
+    <breadcrumb-default title="Shop Categories" subtitle="Shop Categories" />
     <!-- breadcrumb end -->
 
     <!-- category area start -->

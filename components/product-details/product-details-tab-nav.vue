@@ -111,15 +111,7 @@
                       </div>
                   </div>
                 </div> <!-- end col -->
-                <div class="col-lg-6">
-                  <div class="tp-product-details-review-form">
-                      <h3 class="tp-product-details-review-form-title">Review this product</h3>
-                      <p>Your email address will not be published. Required fields are marked *</p>
-                     <!-- form start -->
-                     <forms-review-form/>
-                     <!-- form end -->
-                  </div>
-                </div>
+               
             </div>
           </div>
       </div>

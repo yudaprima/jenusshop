@@ -44,11 +44,6 @@
             </h3>
           </div>
         </div>
-        <div class="offcanvas__btn">
-          <nuxt-link href="/contact" class="tp-btn-2 tp-btn-border-2"
-            >Contact Us</nuxt-link
-          >
-        </div>
       </div>
       <div class="offcanvas__bottom">
         <div

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <nuxt-layout name="layout-one">
+    <nuxt-layout name="layout-main">
       <!-- hero banner start -->
-      <hero-banner-one />
+      <hero-banner-main />
       <!-- hero banner end -->
 
       <!-- category start -->
@@ -10,7 +10,7 @@
       <!-- category end -->
 
       <!-- feature area start -->
-      <feature-one />
+      <feature-info />
       <!-- feature area end -->
 
       <!-- product area start -->
@@ -33,7 +33,7 @@
       <!-- product gadget area end -->
 
       <!-- product banner start -->
-      <banner-area-2 />
+      <banner-area-swipe />
       <!-- product banner end -->
 
       <!-- product new arrivals area start -->
@@ -45,11 +45,11 @@
       <!-- product sm items end -->
 
       <!-- instagram area start -->
-      <instagram-area-1 />
+      <instagram-area />
       <!-- instagram area end -->
 
       <!-- subscribe area start -->
-      <subscribe-1 />
+      <subscribe />
       <!-- subscribe area end -->
     </nuxt-layout>
   </div>

@@ -171,6 +171,11 @@
           <p>Android</p>
         </div>
       </div>
+      <div class="tp-product-detail-commerce">
+        <span>Buy in: </span>
+        <a :href="product.shopeeLink"><img class="com-icon" src="/img/icon/sp.png" alt=""></a>
+       
+      </div>
       <div class="tp-product-details-social">
         <span>Share: </span>
         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -229,3 +234,16 @@ const buyInWa = `${introBuy} ${
   props.product.title
 } - ${props.product.description.substring(0, 100)}...`;
 </script>
+
+
+<style lang="scss">
+.tp-product-detail-commerce{
+  margin-bottom: 20px;
+    .com-icon{
+      width: 30px;
+      text-align: center;
+      margin-left: 5px;
+      
+    }
+}
+</style>

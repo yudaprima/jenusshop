@@ -1,11 +1,11 @@
 <template>
   <div>
-    <header-one />
+    <header-main />
     <main>
       <!-- slot diisi untuk child component agar lebih dinamis -->
       <slot />
     </main>
-    <footer-one />
+    <footer-main />
     <back-to-top />
     <!-- <modal-product /> -->
   </div>

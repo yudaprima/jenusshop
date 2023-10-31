@@ -52,7 +52,6 @@ export const mobile_menu: IMobileType[] = [
       { title: "Shopping Cart", link: "/cart" },
       { title: "Compare", link: "/compare" },
       { title: "Wishlist", link: "/wishlist" },
-      { title: "Checkout", link: "/checkout" },
     ],
   },
 ];
