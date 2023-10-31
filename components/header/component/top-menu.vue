@@ -35,16 +35,10 @@
       <span @click="handleActive('setting')" class="tp-header-setting-toggle" id="tp-header-setting-toggle">Setting</span>
       <ul :class="`${isActive === 'setting' ? 'tp-setting-list-open' : ''}`">
         <li>
-          <nuxt-link href="/profile">My Profile</nuxt-link>
-        </li>
-        <li>
           <nuxt-link href="/wishlist">Wishlist</nuxt-link>
         </li>
         <li>
           <nuxt-link href="/cart">Cart</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link href="/login">Logout</nuxt-link>
         </li>
       </ul>
     </div>

@@ -2,19 +2,7 @@
   <div
     class="tp-header-main-right d-flex align-items-center justify-content-end"
   >
-    <div class="tp-header-login d-none d-lg-block">
-      <nuxt-link href="/profile" class="d-flex align-items-center">
-        <div class="tp-header-login-icon">
-          <span>
-            <SvgUser />
-          </span>
-        </div>
-        <div class="tp-header-login-content d-none d-xl-block">
-          <span>Hello, Sign In</span>
-          <h5 class="tp-header-login-title">Your Account</h5>
-        </div>
-      </nuxt-link>
-    </div>
+   
     <div class="tp-header-action d-flex align-items-center ml-50">
       <div class="tp-header-action-item d-none d-lg-block">
         <nuxt-link href="/compare" class="tp-header-action-btn">
