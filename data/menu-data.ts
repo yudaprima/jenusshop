@@ -1,37 +1,11 @@
 import { IMenuItem, IMobileType } from "@/types/menu-d-type";
 
+// 
 export const menu_data: IMenuItem[] = [
   {
     id: 1,
     link: "/",
     title: "Home",
-    // mega_menu:true,
-    // home_pages:[
-    //   {
-    //     id:1,
-    //     title:'Electronics',
-    //     img:'/img/menu/menu-home-1.jpg',
-    //     link:'/'
-    //   },
-    //   {
-    //     id:2,
-    //     title:'Fashion',
-    //     img:'/img/menu/menu-home-2.jpg',
-    //     link:'/home-2'
-    //   },
-    //   {
-    //     id:3,
-    //     title:'Beauty',
-    //     img:'/img/menu/menu-home-3.jpg',
-    //     link:'/home-3'
-    //   },
-    //   {
-    //     id:4,
-    //     title:'Electronics',
-    //     img:'/img/menu/menu-home-4.jpg',
-    //     link:'/home-4'
-    //   },
-    // ]
   },
   {
     id: 2,
@@ -49,96 +23,12 @@ export const menu_data: IMenuItem[] = [
       },
     ],
   },
-  // {
-  //   id:3,
-  //   link:'/shop',
-  //   title:'Products',
-  //   mega_menu:true,
-  //   product_menus:[
-  //     {
-  //       id:1,
-  //       title:'Shop Page',
-  //       link:'/shop',
-  //       dropdown_menus:[
-  //         {title:'Only Categories',link:'/shop-categories'},
-  //         {title:'Shop Grid with Sidebar',link:'/shop-filter-offcanvas'},
-  //         {title:'Shop Grid',link:'/shop'},
-  //         {title:'Categories',link:'/shop-categories'},
-  //         {title:'Shop List',link:'/shop-list'},
-  //         {title:'Product Details',link:'/product-details'},
-  //       ]
-  //     },
-  //     {
-  //       id:2,
-  //       title:'Products',
-  //       link:'/shop',
-  //       dropdown_menus:[
-  //         {title:'Product Simple',link:'/product-details'},
-  //         {title:'With Video',link:'/product-details-video'},
-  //         {title:'With Countdown Timer',link:'/product-details-countdown'},
-  //         {title:'Variations Swatches',link:'/product-details-swatches'},
-  //         {title:'List View',link:'/product-details-list'},
-  //         {title:'Details Gallery',link:'/product-details-gallery'},
-  //         {title:'With Slider',link:'/product-details-slider'},
-  //       ]
-  //     },
-  //     {
-  //       id:3,
-  //       title:'eCommerce',
-  //       link:'/shop',
-  //       dropdown_menus:[
-  //         {title:'Shopping Cart',link:'/cart'},
-  //         {title:'Track Your Order',link:'/order'},
-  //         {title:'Compare',link:'/compare'},
-  //         {title:'Wishlist',link:'/wishlist'},
-  //         {title:'Checkout',link:'/checkout'},
-  //         {title:'My account',link:'/profile'}
-  //       ]
-  //     },
-  //     {
-  //       id:4,
-  //       title:'More Pages',
-  //       link:'/shop',
-  //       dropdown_menus:[
-  //         {title:'About',link:'/about'},
-  //         {title:'Login',link:'/login'},
-  //         {title:'Register',link:'/register'},
-  //         {title:'Forgot Password',link:'/forgot'},
-  //         {title:'404 Error',link:'/404'}
-  //       ]
-  //     },
-  //   ]
-  // },
-  // {
-  //   id:4,
-  //   link:'/coupons',
-  //   title:'Coupons',
-  // },
-  // {
-  //   id:5,
-  //   link:'/blog',
-  //   title:'Blog',
-  //   drop_down:true,
-  //   dropdown_menus:[
-  //     {title:'Blog Standard',link:'/blog'},
-  //     {title:'Blog Grid',link:'/blog-grid'},
-  //     {title:'Blog List',link:'/blog-list'},
-  //     {title:'Blog Details Full Width',link:'/blog-details-2'},
-  //     {title:'Blog Details',link:'/blog-details'},
-  //   ]
-  // },
-  // {
-  //   id:5,
-  //   link:'/contact',
-  //   title:'Contact',
-  // },
 ];
 
 // mobile menu data
 export const mobile_menu: IMobileType[] = [
   {
     id: 1,
-    // homes: true,
     title: "Home",
     single_link: true,
     link: "/",
@@ -163,10 +53,6 @@ export const mobile_menu: IMobileType[] = [
       { title: "Compare", link: "/compare" },
       { title: "Wishlist", link: "/wishlist" },
       { title: "Checkout", link: "/checkout" },
-    
     ],
   },
- 
- 
-  
 ];
