@@ -38,9 +38,9 @@
                 :key="i"
                 class="tp-brand-item text-center"
               >
-                <a href="#">
-                  <img :src="brand" alt="brand" />
-                </a>
+                <nuxt-link :to="brand.link">
+                  <img :src="brand.logo" alt="brand" />
+                </nuxt-link>
               </SwiperSlide>
             </Swiper>
 
@@ -64,14 +64,42 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper/modules";
 // brand data
 const brand_data = [
-  "/img/brand/adata.png",
-  "/img/brand/galax.png",
-  "/img/brand/bequiet.png",
-  "/img/brand/logo_01.png",
-  "/img/brand/logo_02.png",
-  "/img/brand/logo_03.png",
-  "/img/brand/logo_04.png",
-  "/img/brand/logo_05.png",
+  {
+    logo: "/img/brand/adata.png",
+    link: "shop?brand=adata",
+  },
+  {
+    logo: "/img/brand/galax.png",
+    link: "shop?brand=galax",
+  },
+  {
+    logo: "/img/brand/lenovo.png",
+    link: "shop?brand=lenovo",
+  },
+  {
+    logo: "/img/brand/logitech.png",
+    link: "shop?brand=logitech",
+  },
+  {
+    logo: "/img/brand/samsung.webp",
+    link: "shop?brand=samsung",
+  },
+  {
+    logo: "/img/brand/sony.png",
+    link: "shop?brand=sony",
+  },
+  {
+    logo: "/img/brand/deepcool.webp",
+    link: "shop?brand=deepcool",
+  },
+  {
+    logo: "/img/brand/apple.png",
+    link: "shop?brand=apple",
+  },
+  {
+    logo: "/img/brand/antec.webp",
+    link: "shop?brand=antec",
+  },
 ];
 </script>
 

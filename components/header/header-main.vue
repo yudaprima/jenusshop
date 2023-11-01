@@ -29,7 +29,7 @@
       <!-- header main start -->
       <div class="tp-header-main tp-header-sticky">
         <div class="container">
-          <div class="row align-items-center">
+          <div class="row align-items-center justify-content-between ">
             <div class="col-xl-2 col-lg-2 col-md-4 col-6">
               <div class="logo">
                 <nuxt-link href="/">
@@ -42,11 +42,7 @@
               <header-component-search />
               <!-- search form end -->
             </div>
-            <div class="col-xl-4 col-lg-3 col-md-8 col-6">
-              <!-- header right start -->
-              <header-component-main-right />
-              <!-- header right end -->
-            </div>
+           
           </div>
         </div>
       </div>
@@ -100,52 +96,17 @@
         <div class="tp-mega-menu-wrapper p-relative">
           <div class="row align-items-center">
             <div class="col-xl-3 col-lg-3 col-md-3 col-6">
-              <div class="logo">
+              <div class="logo py-md-2">
                 <nuxt-link href="/">
                   <img src="/img/logo/logo.svg" alt="logo" />
                 </nuxt-link>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6">
-              <div
-                class="tp-header-sticky-menu main-menu menu-style-1 d-none d-lg-block"
-              >
-                <nav id="mobile-menu">
-                  <!-- menus start -->
-                  <header-component-menus />
-                  <!-- menus end -->
-                </nav>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+            
+            <div class="col-xl-3 col-lg-3 col-md-3 col-6 d-none">
               <div
                 class="tp-header-action d-flex align-items-center justify-content-end ml-50"
               >
-                <div class="tp-header-action-item d-none d-lg-block">
-                  <nuxt-link href="/compare" class="tp-header-action-btn">
-                    <svg-compare />
-                  </nuxt-link>
-                </div>
-                <div class="tp-header-action-item d-none d-lg-block">
-                  <nuxt-link href="/wishlist" class="tp-header-action-btn">
-                    <svg-wishlist />
-                    <span class="tp-header-action-badge">{{
-                      wishlistStore.wishlists.length
-                    }}</span>
-                  </nuxt-link>
-                </div>
-                <div class="tp-header-action-item">
-                  <button
-                    @click="cartStore.handleCartOffcanvas"
-                    type="button"
-                    class="tp-header-action-btn cartmini-open-btn"
-                  >
-                    <svg-cart-bag />
-                    <span class="tp-header-action-badge">{{
-                      cartStore.totalPriceQuantity.quantity
-                    }}</span>
-                  </button>
-                </div>
                 <div class="tp-header-action-item d-lg-none">
                   <button
                     @click="utilsStore.handleOpenMobileMenu()"

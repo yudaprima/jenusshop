@@ -13,8 +13,11 @@
             v-for="(item, i) in filterCategories"
             :key="i"
             class="has-dropdown"
+          
           >
-            <a class="cursor-pointer">
+            <a class="cursor-pointer"
+            @click="handleParentCategory(item.parent)"
+            >
               <span v-if="item.img">
                 <img
                   :src="item.img"
@@ -34,10 +37,12 @@
 
             <ul
               v-if="item.children"
-              :class="`tp-submenu ${openCategory === item.parent ? 'active' : ''}`"
+              :class="`tp-submenu ${
+                openCategory === item.parent ? 'active' : ''
+              }`"
             >
               <li v-for="(child, i) in item.children" :key="i">
-                <a class="cursor-pointer">{{ child }}</a>
+                <a class="cursor-pointer"  @click="handleSubCategory(child)">{{ child }}</a>
               </li>
             </ul>
           </li>
@@ -71,5 +76,17 @@ const handleOpenSubMenu = (title: string) => {
 const toggleCategoryActive = () => {
   isCategoryActive.value = !isCategoryActive.value;
 };
-</script>
 
+const router = useRouter();
+// handle parent
+const handleParentCategory = (value: string) => {
+  const newCategory = value.toLowerCase().replace("&", "").split(" ").join("-");
+  router.push(`/shop?category=${newCategory}`);
+};
+
+// handle parent
+const handleSubCategory = (value: string) => {
+  const newCategory = value.toLowerCase().replace("&", "").split(" ").join("-");
+  router.push(`/shop?subCategory=${newCategory}`);
+};
+</script>

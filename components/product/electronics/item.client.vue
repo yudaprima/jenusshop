@@ -20,33 +20,6 @@
       <div class="tp-product-action">
         <div class="tp-product-action-item d-flex flex-column">
           <button
-            v-if="!cartStore.cart_products.some((prd) => prd.id === item.id)"
-            @click="cartStore.addCartProduct(item)"
-            type="button"
-            :class="`tp-product-action-btn tp-product-add-cart-btn ${
-              cartStore.cart_products.some((prd) => prd.id === item.id)
-                ? 'active'
-                : ''
-            }`"
-          >
-            <svg-add-cart />
-            <span class="tp-product-tooltip">Add to Cart</span>
-          </button>
-          <nuxt-link
-            v-if="cartStore.cart_products.some((prd) => prd.id === item.id)"
-            @click="cartStore.addCartProduct(item)"
-            href="/cart"
-            :class="`tp-product-action-btn tp-product-add-cart-btn ${
-              cartStore.cart_products.some((prd) => prd.id === item.id)
-                ? 'active'
-                : ''
-            }`"
-          >
-            <svg-add-cart />
-            <span class="tp-product-tooltip">View Cart</span>
-          </nuxt-link>
-
-          <button
             type="button"
             class="tp-product-action-btn tp-product-quick-view-btn"
             data-bs-toggle="modal"
@@ -57,18 +30,6 @@
           >
             <svg-quick-view />
             <span class="tp-product-tooltip">Quick View</span>
-          </button>
-          <button
-            @click="wishlistStore.add_wishlist_product(item)"
-            type="button"
-            :class="`tp-product-action-btn tp-product-add-to-wishlist-btn ${
-              wishlistStore.wishlists.some((prd) => prd.id === item.id)
-                ? 'active'
-                : ''
-            }`"
-          >
-            <svg-wishlist />
-            <span class="tp-product-tooltip">Add To Wishlist</span>
           </button>
           <a
             :href="item.shopeeLink"

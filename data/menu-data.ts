@@ -43,15 +43,5 @@ export const mobile_menu: IMobileType[] = [
       { title: "Only Categories", link: "/shop-categories" },
     ],
   },
-  {
-    id: 4,
-    sub_menu: true,
-    title: "eCommerce",
-    link: "/cart",
-    sub_menus: [
-      { title: "Shopping Cart", link: "/cart" },
-      { title: "Compare", link: "/compare" },
-      { title: "Wishlist", link: "/wishlist" },
-    ],
-  },
+ 
 ];

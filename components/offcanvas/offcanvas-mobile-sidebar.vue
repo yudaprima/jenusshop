@@ -24,7 +24,10 @@
           </div>
         </div>
         <!-- mobile category start -->
-        <header-component-mobile-categories :product-type="productType" />
+        <header-component-mobile-categories
+          v-if="showMobileCategories || isDisabledMenu()"
+          :product-type="productType"
+        />
         <!-- mobile category end -->
         <div class="tp-main-menu-mobile fix d-lg-none mb-40">
           <!-- mobile menus start -->
@@ -109,6 +112,27 @@
 import { useUtilityStore } from "@/pinia/useUtilityStore";
 const props = defineProps<{ productType: string }>();
 const utilsStore = useUtilityStore();
+
+const route = useRoute();
+const { name } = route;
+
+let showMobileCategories = true;
+watch(
+  () => route.name,
+  (newRouteName, oldRouteName) => {
+    if (newRouteName === "shop") {
+      showMobileCategories = false;
+    } else {
+      showMobileCategories = true;
+    }
+  }
+);
+
+const isDisabledMenu = () => {
+  if (name === "shop" || name === "product-detail-id") {
+    return showMobileCategories = false;
+  }
+};
 
 let isToggleActive = ref<string>("");
 // handle active

@@ -3,26 +3,24 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     [
-      '@pinia/nuxt',
+      "@pinia/nuxt",
+
       {
-        autoImports: [
-          'defineStore',
-          ['defineStore', 'definePiniaStore'],
-        ],
+        autoImports: ["defineStore", ["defineStore", "definePiniaStore"]],
       },
     ],
   ],
   app: {
     head: {
       title: "Shofy - Find your gadgets",
-      charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
       script: [
         {
           src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js",
         },
       ],
-    }
+    },
   },
   css: [
     "bootstrap/scss/bootstrap.scss",
@@ -31,5 +29,4 @@ export default defineNuxtConfig({
     "@/assets/css/flaticon_shofy.css",
     "@/assets/scss/main.scss",
   ],
-  
-})
+});

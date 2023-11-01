@@ -10,72 +10,37 @@
 
       <!-- product badge -->
       <div class="tp-product-badge">
-        <span v-if="item.status === 'out-of-stock'" class="product-hot">out-of-stock</span>
+        <span v-if="item.status === 'out-of-stock'" class="product-hot"
+          >out-of-stock</span
+        >
       </div>
 
       <!-- product action -->
       <div class="tp-product-action-2 tp-product-action-blackStyle">
         <div class="tp-product-action-item-2 d-flex flex-column">
           <button
-            v-if="!cartStore.cart_products.some((prd) => prd.id === item.id)"
-            @click="cartStore.addCartProduct(item)"
-            type="button"
-            :class="`tp-product-action-btn-2 tp-product-add-cart-btn ${
-              cartStore.cart_products.some((prd) => prd.id === item.id)
-                ? 'active'
-                : ''
-            }`"
-          >
-            <svg-add-cart />
-            <span class="tp-product-tooltip tp-product-tooltip-right">Add to Cart</span>
-          </button>
-          <nuxt-link
-            v-if="cartStore.cart_products.some((prd) => prd.id === item.id)"
-            href="/cart"
-            :class="`tp-product-action-btn-2 tp-product-add-cart-btn ${
-              cartStore.cart_products.some((prd) => prd.id === item.id)
-                ? 'active'
-                : ''
-            }`"
-          >
-            <svg-add-cart />
-            <span class="tp-product-tooltip tp-product-tooltip-right">View Cart</span>
-          </nuxt-link>
-
-          <button
             type="button"
             class="tp-product-action-btn-2 tp-product-quick-view-btn"
             data-bs-toggle="modal"
             :data-bs-target="`#${utilityStore.modalId}`"
-            @click="utilityStore.handleOpenModal(`product-modal-${item.id}`,item)"
+            @click="
+              utilityStore.handleOpenModal(`product-modal-${item.id}`, item)
+            "
           >
             <svg-quick-view />
-            <span class="tp-product-tooltip tp-product-tooltip-right">Quick View</span>
+            <span class="tp-product-tooltip tp-product-tooltip-right"
+              >Quick View</span
+            >
           </button>
-
-          <button
-            @click="wishlistStore.add_wishlist_product(item)"
+          <a
+            :href="item.shopeeLink"
+            target="_blank"
             type="button"
-            :class="`tp-product-action-btn-2 tp-product-add-to-wishlist-btn ${
-              wishlistStore.wishlists.some((prd) => prd.id === item.id)
-                ? 'active'
-                : ''
-            }`"
+            class="tp-product-action-btn-2 tp-product-quick-view-btn"
           >
-            <svg-wishlist />
-            <span class="tp-product-tooltip tp-product-tooltip-right">Add To Wishlist</span>
-          </button>
-
-          <button
-            @click="compareStore.add_compare_product(item)"
-            type="button"
-            :class="`tp-product-action-btn-2 tp-product-add-to-compare-btn ${
-              compareStore.compare_items.some((prd) => prd.id === item.id) ? 'active': ''
-            }`"
-          >
-            <svg-compare-2 />
-            <span class="tp-product-tooltip tp-product-tooltip-right">Add To Compare</span>
-          </button>
+            <img class="icon" width="20" src="/img/icon/sp.png" alt="" />
+            <span class="tp-product-tooltip tp-product-tooltip-right">View Link</span>
+          </a>
         </div>
       </div>
     </div>
@@ -84,7 +49,9 @@
         <a href="#">{{ item.category.name }}</a>
       </div>
       <h3 class="tp-product-title-2">
-        <nuxt-link :href="`/product-details/${item.id}`">{{ item.title }}</nuxt-link>
+        <nuxt-link :href="`/product-details/${item.id}`">{{
+          item.title
+        }}</nuxt-link>
       </h3>
       <div class="tp-product-rating-icon tp-product-rating-icon-2">
         <span><i class="fa-solid fa-star"></i></span>
@@ -105,7 +72,9 @@
             }}
           </span>
         </div>
-        <span v-else class="tp-product-price-2 new-price">${{ item.price.toFixed(2) }}</span>
+        <span v-else class="tp-product-price-2 new-price"
+          >${{ item.price.toFixed(2) }}</span
+        >
       </div>
     </div>
   </div>
@@ -130,3 +99,9 @@ const props = withDefaults(
   }
 );
 </script>
+
+<style scoped>
+.tp-product-action-btn-2 .icon {
+  width: 20px !important;
+}
+</style>

@@ -56,37 +56,7 @@
       >
     </div>
 
-    <!-- variations -->
-    <div v-if="hasColorData" class="tp-product-details-variation">
-      <div class="tp-product-details-variation-item">
-        <h4 class="tp-product-details-variation-title">Color :</h4>
-        <div class="tp-product-details-variation-list">
-          <button
-            v-for="(item, i) in product.imageURLs"
-            :key="i"
-            @click="productStore.handleImageActive(item.img)"
-            type="button"
-            :class="[
-              'color',
-              'tp-color-variation-btn',
-              item.img === productStore.activeImg ? 'active' : '',
-            ]"
-            style="margin-right: 5px"
-          >
-            <span
-              :data-bg-color="item.color?.clrCode"
-              :style="`background-color:${item.color?.clrCode}`"
-            ></span>
-            <span
-              v-if="item.color && item.color.name"
-              class="tp-color-variation-tootltip"
-            >
-              {{ item.color.name }}
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
+  
 
     <!-- product countdown start -->
     <div v-if="product.offerDate?.endDate">
@@ -96,35 +66,7 @@
 
     <!-- actions -->
     <div class="tp-product-details-action-wrapper">
-      <h3 class="tp-product-details-action-title">Quantity</h3>
-      <div
-        class="tp-product-details-action-item-wrapper d-flex align-items-center"
-      >
-        <div class="tp-product-details-quantity">
-          <div class="tp-product-quantity mb-15 mr-15">
-            <span class="tp-cart-minus" @click="cartStore.decrement">
-              <svg-minus />
-            </span>
-            <input
-              class="tp-cart-input"
-              type="text"
-              :value="cartStore.orderQuantity"
-              disabled
-            />
-            <span class="tp-cart-plus" @click="cartStore.increment">
-              <svg-plus-sm />
-            </span>
-          </div>
-        </div>
-        <div class="tp-product-details-add-to-cart mb-15 w-100">
-          <button
-            @click="cartStore.addCartProduct(product)"
-            class="tp-product-details-add-to-cart-btn w-100"
-          >
-            Add To Cart
-          </button>
-        </div>
-      </div>
+     
       <a
         :href="`https://wa.me/?text=${buyInWa}`"
         target="_blank"
@@ -134,22 +76,6 @@
       >
     </div>
     <div class="tp-product-details-action-sm">
-      <button
-        @click="compareStore.add_compare_product(product)"
-        type="button"
-        class="tp-product-details-action-sm-btn"
-      >
-        <svg-compare-3 />
-        Compare
-      </button>
-      <button
-        @click="wishlistStore.add_wishlist_product(product)"
-        type="button"
-        class="tp-product-details-action-sm-btn"
-      >
-        <svg-wishlist-3 />
-        Add Wishlist
-      </button>
       <button type="button" class="tp-product-details-action-sm-btn">
         <svg-ask-question />
         Ask a question

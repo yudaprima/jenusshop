@@ -4,7 +4,7 @@
       class="tp-shop-widget-brand-list d-flex align-items-center justify-content-between flex-wrap"
     >
       <div
-        v-for="item in brands_data.slice(0, 8)"
+        v-for="item in brands_data.slice(0, 11)"
         :key="item.id"
         class="tp-shop-widget-brand-item"
       >
@@ -59,3 +59,12 @@ const handleBrandRoute = (value: string) => {
   }
 };
 </script>
+
+
+<style scoped>
+
+.cursor-pointer img{
+  width: 50px;
+}
+
+</style>
