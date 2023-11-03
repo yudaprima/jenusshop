@@ -1,7 +1,14 @@
 <template>
   <ul>
     <li v-for="(item,i) in menu_data" :key="i" :class="`${item.drop_down?'has-dropdown':item.mega_menu?'has-dropdown has-mega-menu':''}`">
-      <nuxt-link :href="item.link">{{item.title}}</nuxt-link>
+      <nuxt-link :href="item.link">
+      <template v-if="item.icon">
+        <img width="50" :src="item.icon" alt="">
+      </template>
+      <template v-else>
+        {{item.title}}
+      </template>
+      </nuxt-link>
       <div v-if="item.home_pages" class="home-menu tp-submenu tp-mega-menu">
         <div class="row row-cols-1 row-cols-lg-4 row-cols-xl-4">
           <div v-for="(home,i) in item.home_pages" :key="i" class="col">

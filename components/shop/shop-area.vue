@@ -58,7 +58,7 @@
                   <div
                     v-for="item in store.filteredProducts?.slice(startIndex,endIndex)"
                     :key="item.id"
-                    class="col-xl-4 col-md-6 col-sm-6 infinite-item"
+                    class="col-xl-4 col-md-6 col-sm-6 col-6 infinite-item"
                   >
                     <product-fashion-product-item
                       :item="item"

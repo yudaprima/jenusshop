@@ -4,6 +4,7 @@ export interface IMenuItem {
   title: string;
   mega_menu?: boolean;
   drop_down?: boolean;
+  icon?: string;
   home_pages?: {
     id: number;
     title: string;
@@ -33,7 +34,7 @@ export interface IMenuItem {
   }[];
 }
 
-// mobile menu type 
+// mobile menu type
 export interface IMobileType {
   id: number;
   homes?: boolean;

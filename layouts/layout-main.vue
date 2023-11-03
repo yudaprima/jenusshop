@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-main />
+    <header-default />
     <main>
       <!-- slot diisi untuk child component agar lebih dinamis -->
       <slot />

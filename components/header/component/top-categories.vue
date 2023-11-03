@@ -4,7 +4,6 @@
       <span>
         <SvgDropdown />
       </span>
-      All Categories 
     </button>
     <Transition>
       <nav v-if="isActive" class="tp-category-menu-content">
