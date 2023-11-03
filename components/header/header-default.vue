@@ -56,7 +56,10 @@
             <div class="row align-items-center justify-content-between">
               <div class="col-4">
                 <div class="row">
-                  <div style="width: auto !important;" class="tp-header-bottom col-1">
+                  <div
+                    style="width: auto !important"
+                    class="tp-header-bottom col-1"
+                  >
                     <div class="container">
                       <div class="tp-mega-menu-wrapper p-relative">
                         <div class="row align-items-center">
@@ -80,15 +83,6 @@
                 <!-- header bottom start -->
               </div>
 
-              <div class="col-xl-2 d-none d-xl-block">
-                <div class="main-menu menu-style-2">
-                  <nav class="tp-main-menu-content">
-                    <!-- menus start -->
-                    <header-component-menus />
-                    <!-- menus end -->
-                  </nav>
-                </div>
-              </div>
               <div class="col-xl-5 col-lg-7 col-md-7 col-sm-8 col-6">
                 <div
                   class="tp-header-bottom-right d-flex align-items-center justify-content-end pl-30"
@@ -105,6 +99,16 @@
                       </button>
                     </form>
                   </div>
+                </div>
+              </div>
+
+              <div class="col-xl-2 d-none d-xl-block">
+                <div class="main-menu menu-style-2">
+                  <nav class="tp-main-menu-content">
+                    <!-- menus start -->
+                    <header-component-menus />
+                    <!-- menus end -->
+                  </nav>
                 </div>
               </div>
             </div>
@@ -147,3 +151,11 @@ const handleSubmit = () => {
   }
 };
 </script>
+
+<style scoped>
+@media screen and (max-width: 400px) {
+  .logo img {
+    width: 80px !important;
+  }
+}
+</style>

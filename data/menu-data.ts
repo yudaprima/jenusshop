@@ -3,26 +3,10 @@ import { IMenuItem, IMobileType } from "@/types/menu-d-type";
 // 
 export const menu_data: IMenuItem[] = [
   {
-    id: 1,
-    link: "/",
-    title: "Home",
-  },
-  {
     id: 2,
     link: "/shop",
     title: "Shop",
     icon: '/img/logo/logo.jpeg',
-    // mega_menu: true,
-    // shop_mega_menus: [
-    //   {
-    //     link: "/shop",
-    //     title: "Shop Pages",
-    //     list_menus: [
-    //       { title: "Shop", link: "/shop" },
-    //       { title: "Shop Categories", link: "/shop-categories" },
-    //     ],
-    //   },
-    // ],
   },
 ];
 

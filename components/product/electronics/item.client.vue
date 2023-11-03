@@ -56,7 +56,7 @@
           {{ item.title }}
         </nuxt-link>
       </h3>
-      <div class="tp-product-rating d-flex align-items-center">
+      <div class="tp-product-rating d-flex align-items-center flex-wrap">
         <div class="tp-product-rating-icon">
           <span><i class="fa-solid fa-star"></i></span>
           <span><i class="fa-solid fa-star"></i></span>
@@ -130,5 +130,18 @@ if (props.item.offerDate) {
 <style scoped>
 .tp-product-action-btn .icon {
   width: 20px !important;
+}
+
+
+.tp-product-title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width:768px) {
+  .tp-product-content{
+    padding: 10px 10px;
+}
 }
 </style>

@@ -27,7 +27,7 @@
         <div class="col-xl-12">
           <div class="tp-product-tab-content">
             <div class="row">
-              <div v-for="(item,i) in filteredProducts" :key="i" class="col-xl-3 col-lg-3 col-sm-6">
+              <div v-for="(item,i) in filteredProducts" :key="i" class="col-xl-3 col-lg-3 col-sm-6 col-6">
                 <ProductElectronicsItem :item="item" />
               </div>
             </div>
