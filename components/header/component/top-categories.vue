@@ -1,12 +1,12 @@
 <template>
   <div class="tp-header-category tp-category-menu tp-header-category-toggle">
-    <button @click="handleActive" class="tp-category-menu-btn tp-category-menu-toggle">
+    <button @click="handleActive" @mouseenter="handleActive"  class="tp-category-menu-btn tp-category-menu-toggle">
       <span>
         <SvgDropdown />
       </span>
     </button>
     <Transition>
-      <nav v-if="isActive" class="tp-category-menu-content">
+      <nav v-if="isActive" @mouseleave="handleInactive" class="tp-category-menu-content">
         <ul>
           <li v-for="(item, i) in category_items" class="has-dropdown" :key="i">
             <a class="cursor-pointer" @click="handleParentCategory(item.parent)">
@@ -42,6 +42,7 @@ const category_items = category_data.filter(
 let isActive = ref<boolean>(false);
 // handle active
 const handleActive = () => isActive.value = !isActive.value;
+const handleInactive = () => isActive.value = false;
 
 // handle parent
 const handleParentCategory = (value:string) => {
