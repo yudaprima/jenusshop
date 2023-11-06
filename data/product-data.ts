@@ -1,6 +1,7 @@
 import { IProduct } from "types/product-type";
 
-const product_data_2: IProduct[] = [
+
+const product_data: IProduct[] = [
   {
     id: "galax-rtx-3060-12",
     sku: "RTX3060SDK",
@@ -235,9 +236,6 @@ const product_data_2: IProduct[] = [
     sellCount: 1,
     tags: ["ssd", "adata "],
   },
-];
-const product_data: IProduct[] = [
-  ...product_data_2,
   {
     id: "641e887d05f9ee1717e1348a",
     sku: "NTB7SDVX44",

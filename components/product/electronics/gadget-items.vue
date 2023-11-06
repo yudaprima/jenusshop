@@ -75,7 +75,7 @@
               <div
                 v-for="item in product_data.slice(0, 6)"
                 :key="item.id"
-                class="col-xl-4 col-sm-6"
+                class="col-xl-4 col-sm-6 col-6"
               >
                 <ProductElectronicsItem :item="item" />
               </div>
