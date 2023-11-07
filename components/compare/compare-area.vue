@@ -35,11 +35,11 @@
                               <th>Price</th>
                               <td v-for="item in compareStore.compare_items" :key="item.id">
                                   <div class="tp-compare-price" v-if="item.discount > 0">
-                                      <span>${{ item.price.toFixed(2) }}</span>
-                                      <span class="old-price">${{(Number(item.price) - (Number(item.price) * Number(item.discount)) / 100).toFixed(2)}}</span>
+                                      <span>Rp{{ item.price.toFixed(2) }}</span>
+                                      <span class="old-price">Rp{{(Number(item.price) - (Number(item.price) * Number(item.discount)) / 100).toFixed(2)}}</span>
                                   </div>
                                   <div class="tp-compare-price" v-else>
-                                      <span>${{ item.price.toFixed(2) }}</span>
+                                      <span>Rp{{ item.price.toFixed(2) }}</span>
                                   </div>
                               </td>
                             </tr>

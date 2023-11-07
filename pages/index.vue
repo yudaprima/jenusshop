@@ -59,5 +59,5 @@
 definePageMeta({
   layout: false,
 });
-useSeoMeta({ title: "Shofy - Multipurpose eCommerce Vue Nuxt 3 Template" });
+useSeoMeta({ title: "Jamusshop - Temukan Poduct terbaik anda" });
 </script>

@@ -6,8 +6,7 @@
           <div class="col-md-6">
             <div class="tp-footer-copyright">
               <p>
-                © {{ new Date().getFullYear() }} All Rights Reserved | vue nuxt
-                3 Template by <NuxtLink href="/">ThemePure</NuxtLink>.
+                © {{ new Date().getFullYear() }} All Rights Reserved |<NuxtLink href="/">JenusShop</NuxtLink>.
               </p>
             </div>
           </div>

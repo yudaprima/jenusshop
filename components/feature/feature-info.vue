@@ -37,7 +37,7 @@
             </div>
             <div class="tp-feature-content">
               <h3 class="tp-feature-title">Member Discount</h3>
-              <p>One very order over $140.00</p>
+              <p>One very order over Rp.140.00</p>
             </div>
           </div>
         </div>

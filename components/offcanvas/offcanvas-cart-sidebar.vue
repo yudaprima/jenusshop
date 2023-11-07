@@ -54,7 +54,7 @@
                   }}
                 </span>
                 <span v-else class="cartmini__price">
-                  ${{item.orderQuantity && (item.price * item.orderQuantity).toFixed(2)}}
+                  Rp {{item.orderQuantity && (item.price * item.orderQuantity).toFixed(2)}}
                 </span>
                 <span class="cartmini__quantity">{{ " " }}x{{ item.orderQuantity }}</span>
               </div>

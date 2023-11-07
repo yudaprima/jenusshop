@@ -9,10 +9,10 @@
                 <div class="tp-footer-widget-content">
                   <div class="tp-footer-logo">
                     <nuxt-link href="/">
-                      <img src="/img/logo/logo.svg" alt="logo">
+                      <img src="/img/logo/logo.jpeg" alt="logo">
                     </nuxt-link>
                   </div>
-                  <p class="tp-footer-desc">We are a team of designers and developers that create high quality WordPress
+                  <p class="tp-footer-desc">JenusShop Menghadirkan Product prouduct berkualitas dari brand brand ternama yang bisa anda percaya dengan harga terjangkau
                   </p>
                   <div class="tp-footer-social">
                     <!-- social links -->

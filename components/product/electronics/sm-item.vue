@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="tp-product-price-wrapper">
-        <span class="tp-product-price">${{item.price.toFixed(2)}}</span>
+        <span class="tp-product-price">Rp.{{item.price.toFixed(2)}}</span>
       </div>
     </div>
   </div>

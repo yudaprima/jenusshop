@@ -57,12 +57,12 @@
 
         <div class="tp-product-price-wrapper-2">
           <div v-if="item.discount > 0">
-            <span class="tp-product-price-2 new-price">${{ item.price }}</span>
+            <span class="tp-product-price-2 new-price">Rp{{ item.price }}</span>
             <span class="tp-product-price-2 old-price">
-              ${{(Number(item.price) - (Number(item.price) * Number(item.discount)) / 100).toFixed(2)}}
+              Rp {{(Number(item.price) - (Number(item.price) * Number(item.discount)) / 100).toFixed(2)}}
             </span>
           </div>
-          <span v-else class="tp-product-price-2 new-price">${{ item.price.toFixed(2) }}</span>
+          <span v-else class="tp-product-price-2 new-price">Rp{{ item.price.toFixed(2) }}</span>
         </div>
 
         <p>{{ item.description.slice(0, 100) }}</p>

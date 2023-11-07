@@ -99,7 +99,7 @@
         }}</nuxt-link>
       </h3>
       <div class="tp-product-price-wrapper-3">
-        <span class="tp-product-price-3">${{ item.price.toFixed(2) }}</span>
+        <span class="tp-product-price-3">Rp{{ item.price.toFixed(2) }}</span>
       </div>
     </div>
   </div>

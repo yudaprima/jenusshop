@@ -55,7 +55,7 @@
               <div class="tp-slider-content p-relative z-index-1">
                 <span
                   >{{ item.pre_title.text }}
-                  <b>${{ item.pre_title.price.toFixed(2) }}</b></span
+                  <b>Rp{{ item.pre_title.price.toFixed(2) }}</b></span
                 >
                 <h3 class="tp-slider-title">{{ item.title }}</h3>
                 <p>

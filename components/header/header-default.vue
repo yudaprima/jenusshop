@@ -26,7 +26,7 @@
                     <span>
                       <svg-phone />
                     </span>
-                    +(402) 763 282 46
+                    +(62) 763 282 46
                   </a>
                 </div>
               </div>
@@ -75,7 +75,7 @@
                   <div class="col-2">
                     <div class="logo">
                       <nuxt-link href="/">
-                        <img src="/img/logo/logo.svg" alt="logo" />
+                        <img src="/img/logo/logo-white.svg" alt="logo" />
                       </nuxt-link>
                     </div>
                   </div>

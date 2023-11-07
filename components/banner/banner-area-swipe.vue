@@ -29,8 +29,8 @@
                     {{item.title}}
                   </h3>
                   <div class="tp-product-banner-price mb-40">
-                    <span class="old-price">${{item.oldPrice}}</span>
-                    <p class="new-price">${{item.newPrice}}</p>
+                    <span class="old-price">Rp{{item.oldPrice}}</span>
+                    <p class="new-price">Rp{{item.newPrice}}</p>
                   </div>
                   <div class="tp-product-banner-btn">
                     <nuxt-link href="/shop" class="tp-btn tp-btn-2">Shop now</nuxt-link>

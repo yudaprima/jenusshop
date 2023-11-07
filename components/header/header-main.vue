@@ -12,7 +12,7 @@
                 <span>
                   <svg-shipping-car />
                 </span>
-                <p>FREE Express Shipping On Orders $570+</p>
+                <p>FREE Express Shipping On Orders Rp.570+</p>
               </div>
             </div>
             <div class="col-md-6">
@@ -33,7 +33,7 @@
             <div class="col-xl-2 col-lg-2 col-md-4 col-6">
               <div class="logo">
                 <nuxt-link href="/">
-                  <img src="/img/logo/logo.svg" alt="logo" />
+                  <img src="/img/logo/logo-white.svg" alt="logo" />
                 </nuxt-link>
               </div>
             </div>
@@ -77,7 +77,7 @@
                   </div>
                   <div class="tp-header-contact-content">
                     <h5>Hotline:</h5>
-                    <p><a href="tel:402-763-282-46">+(402) 763 282 46</a></p>
+                    <p><a href="tel:402-763-282-46">+(26) 763 282 46</a></p>
                   </div>
                 </div>
               </div>
@@ -98,7 +98,7 @@
             <div class="col-xl-3 col-lg-3 col-md-3 col-6">
               <div class="logo py-md-2">
                 <nuxt-link href="/">
-                  <img src="/img/logo/logo.svg" alt="logo" />
+                  <img src="/img/logo/logo-white.svg" alt="logo" />
                 </nuxt-link>
               </div>
             </div>

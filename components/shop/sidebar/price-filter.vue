@@ -13,7 +13,7 @@
         class="tp-shop-widget-filter-info d-flex align-items-center justify-content-between"
       >
         <span class="input-range">
-          ${{ store.priceValues[0] }} - ${{ store.priceValues[1] }}
+          Rp{{ store.priceValues[0] }} - ${{ store.priceValues[1] }}
         </span>
         <button
           @click="handlePriceFilter"

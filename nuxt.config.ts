@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      title: "Shofy - Find your gadgets",
+      title: "Jamusshop - Find your products",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       script: [
