@@ -36,7 +36,7 @@
                 class="tp-header-top-right tp-header-top-black d-flex align-items-center justify-content-end"
               >
                 <!-- header top menu start -->
-                <header-component-top-menu />
+                <!-- <header-component-top-menu /> -->
                 <!-- header top menu end -->
               </div>
             </div>
