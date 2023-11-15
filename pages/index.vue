@@ -59,5 +59,5 @@
 definePageMeta({
   layout: false,
 });
-useSeoMeta({ title: "Jamusshop - Temukan Poduct terbaik anda" });
+useSeoMeta({ title: "JenusShop - Temukan Poduct terbaik anda" });
 </script>
