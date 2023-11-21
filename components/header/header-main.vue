@@ -33,7 +33,7 @@
             <div class="col-xl-2 col-lg-2 col-md-4 col-6">
               <div class="logo">
                 <nuxt-link href="/">
-                  <img src="/img/logo/new-logo.jpeg" alt="logo" />
+                  <img src="/img/logo/new-logo.jpeg" alt="logo" width="35" height="35" />
                 </nuxt-link>
               </div>
             </div>
@@ -98,7 +98,7 @@
             <div class="col-xl-3 col-lg-3 col-md-3 col-6">
               <div class="logo py-md-2">
                 <nuxt-link href="/">
-                  <img src="/img/logo/new-logo.jpeg" alt="logo" />
+                  <img src="/img/logo/new-logo.jpeg" alt="logo" width="35" height="35" />
                 </nuxt-link>
               </div>
             </div>
