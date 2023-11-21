@@ -62,3 +62,10 @@ const handleActiveIndex = (index: number) => {
   }
 };
 </script>
+
+
+<style scoped>
+:deep(.tp-slider-active .tp-slider-dot) {
+  bottom: 10px;
+}
+</style>
