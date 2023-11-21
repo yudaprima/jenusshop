@@ -130,7 +130,7 @@
 
 <script setup lang="ts">
 import { useProductStore } from "@/pinia/useProductStore";
-import { IProduct } from "@/types/product-type";
+import type { IProduct } from "@/types/product-type";
 import { useCartStore } from "@/pinia/useCartStore";
 import { useCompareStore } from "@/pinia/useCompareStore";
 import { useWishlistStore } from "@/pinia/useWishlistStore";

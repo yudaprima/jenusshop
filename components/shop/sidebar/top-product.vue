@@ -46,7 +46,7 @@
 
 <script setup lang="ts">
 import product_data from "@/data/product-data";
-import { IProduct } from "@/types/product-type";
+import type { IProduct } from "@/types/product-type";
 
 let topRatedProducts: { product: IProduct; rating: number }[] = product_data
   .map((product) => {

@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 import { computed, ref, onMounted,watch } from "vue";
-import { IProduct } from "@/types/product-type";
+import type { IProduct } from "@/types/product-type";
 import { IBlogType } from "@/types/blog-type";
 const emit = defineEmits(["handlePaginate"]);
 const route = useRoute();

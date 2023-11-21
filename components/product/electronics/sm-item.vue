@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { IProduct } from '@/types/product-type';
+import type { IProduct } from '@/types/product-type';
 
 const props = defineProps<{ item: IProduct;}>();
 </script>

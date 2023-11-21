@@ -17,7 +17,7 @@
 <script setup lang="ts">
 import product_data from '@/data/product-data';
 import { useProductStore } from '@/pinia/useProductStore';
-import { IProduct } from '@/types/product-type';
+import type { IProduct } from '@/types/product-type';
 const route = useRoute()
 
 const productStore = useProductStore();
