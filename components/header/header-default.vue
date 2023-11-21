@@ -75,7 +75,7 @@
                   <div class="col-2">
                     <div class="logo">
                       <nuxt-link href="/">
-                        <img src="/img/logo/logo-white.svg" alt="logo" />
+                        <img src="/img/logo/new-logo.jpeg" alt="logo" width="35" height="35" />
                       </nuxt-link>
                     </div>
                   </div>

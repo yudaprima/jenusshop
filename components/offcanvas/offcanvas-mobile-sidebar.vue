@@ -19,7 +19,7 @@
         >
           <div class="offcanvas__logo logo">
             <nuxt-link href="/">
-              <img src="/img/logo/logo-white.svg" alt="logo" />
+              <img src="/img/logo/new-logo.jpeg" alt="logo" />
             </nuxt-link>
           </div>
         </div>
