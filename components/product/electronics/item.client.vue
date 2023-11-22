@@ -111,8 +111,8 @@
 import { useCartStore } from "@/pinia/useCartStore";
 import { useWishlistStore } from "@/pinia/useWishlistStore";
 import { useUtilityStore } from "@/pinia/useUtilityStore";
-import { IProduct } from "@/types/product-type";
-import { useTimer, UseTimer } from "vue-timer-hook";
+import type { IProduct } from "@/types/product-type";
+import { useTimer, type UseTimer } from "vue-timer-hook";
 
 const props = defineProps<{ item: IProduct; offer_style?: boolean }>();
 const cartStore = useCartStore();

@@ -81,7 +81,7 @@
 </template>
 
 <script setup lang="ts">
-import { IProduct } from "@/types/product-type";
+import type { IProduct } from "@/types/product-type";
 import { useCompareStore } from "@/pinia/useCompareStore";
 import { useCartStore } from "@/pinia/useCartStore";
 import { useUtilityStore } from "@/pinia/useUtilityStore";

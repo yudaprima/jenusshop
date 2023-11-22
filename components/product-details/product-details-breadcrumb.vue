@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { IProduct } from "@/types/product-type";
+import type { IProduct } from "@/types/product-type";
 
 defineProps<{product:IProduct}>()
 </script>

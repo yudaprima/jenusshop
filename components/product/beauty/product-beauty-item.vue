@@ -110,7 +110,7 @@ import { useCompareStore } from "@/pinia/useCompareStore";
 import { useCartStore } from "@/pinia/useCartStore";
 import { useWishlistStore } from "@/pinia/useWishlistStore";
 import { useUtilityStore } from "@/pinia/useUtilityStore";
-import { IProduct } from "@/types/product-type";
+import type { IProduct } from "@/types/product-type";
 // props
 defineProps<{
   item: IProduct;

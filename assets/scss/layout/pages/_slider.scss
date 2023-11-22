@@ -208,11 +208,7 @@
         }
     }
     &-height{
-        min-height: 516px;
-
-        @media #{$sm, $xs}{
-            min-height: 816px;
-        }
+        min-height: 100px;
     }
     &-shape{
         &-1{

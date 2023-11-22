@@ -58,7 +58,7 @@
                 <div class="row">
                   <div
                     style="width: auto !important"
-                    class="tp-header-bottom col-1"
+                    class="tp-header-bottom col-1 pe-0"
                   >
                     <div class="container">
                       <div class="tp-mega-menu-wrapper p-relative">
@@ -72,10 +72,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-2">
+                  <div class="col-2 ps-0">
                     <div class="logo">
                       <nuxt-link href="/">
-                        <img src="/img/logo/logo-white.svg" alt="logo" />
+                        <img src="/img/logo/new-logo.jpeg" alt="logo" width="35" height="35" />
                       </nuxt-link>
                     </div>
                   </div>
@@ -151,11 +151,3 @@ const handleSubmit = () => {
   }
 };
 </script>
-
-<style scoped>
-@media screen and (max-width: 400px) {
-  .logo img {
-    width: 80px !important;
-  }
-}
-</style>

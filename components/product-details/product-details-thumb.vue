@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import { IProduct } from "@/types/product-type";
+import type { IProduct } from "@/types/product-type";
 import { useProductStore } from "@/pinia/useProductStore";
 import { useUtilityStore } from "@/pinia/useUtilityStore";
 // props

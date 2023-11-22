@@ -4,10 +4,7 @@
       <div class="row align-items-end">
         <div class="col-xl-4 col-md-5 col-sm-6">
           <div class="tp-section-title-wrapper mb-40">
-            <h3 class="tp-section-title">
-              Deal of The Day
-              <SvgSectionLine />
-            </h3>
+            <h3 class="tp-section-title">Deal of The Day</h3>
           </div>
         </div>
         <div class="col-xl-8 col-md-7 col-sm-6">
@@ -49,7 +46,7 @@
                 },
                 '0': {
                   slidesPerView: 1,
-                }
+                },
               }"
               :modules="[Pagination]"
               class="tp-product-offer-slider-active swiper-container"
@@ -57,7 +54,9 @@
               <SwiperSlide v-for="(item, i) in offer_products" :key="i">
                 <ProductElectronicsItem :item="item" :offer_style="true" />
               </SwiperSlide>
-              <div class="tp-deals-slider-dot tp-swiper-dot text-center mt-40"></div>
+              <div
+                class="tp-deals-slider-dot tp-swiper-dot text-center mt-40"
+              ></div>
             </Swiper>
           </div>
         </div>
@@ -67,11 +66,11 @@
 </template>
 
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination } from "swiper/modules";
-import product_data from "@/data/product-data";
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Pagination } from 'swiper/modules'
+import product_data from '@/data/product-data'
 
 const offer_products = product_data.filter(
-  (p) => p.productType === "electronics" && p.offerDate
-);
+  (p) => p.productType === 'electronics' && p.offerDate,
+)
 </script>

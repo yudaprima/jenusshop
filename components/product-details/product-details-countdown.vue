@@ -19,8 +19,8 @@
 </template>
 
 <script setup lang="ts">
-import { IProduct } from "@/types/product-type";
-import { useTimer, UseTimer } from "vue-timer-hook";
+import type { IProduct } from "@/types/product-type";
+import { useTimer, type UseTimer } from "vue-timer-hook";
 const props = defineProps<{ product: IProduct }>();
 
 let timer: UseTimer;

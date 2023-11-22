@@ -37,7 +37,7 @@
 
 <script setup lang="ts">
 import { useCartStore } from "@/pinia/useCartStore";
-import { IProduct } from '@/types/product-type';
+import type { IProduct } from '@/types/product-type';
 const cartStore = useCartStore();
 
 const props = defineProps<{item:IProduct}>()

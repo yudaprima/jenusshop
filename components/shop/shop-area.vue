@@ -116,7 +116,7 @@
 import { ref, watch } from "vue";
 import product_data from "@/data/product-data";
 import { useProductFilterStore } from "@/pinia/useProductFilterStore";
-import { IProduct } from "@/types/product-type";
+import type { IProduct } from "@/types/product-type";
 const route = useRoute();
 const props = defineProps<{
   list_style?: boolean;

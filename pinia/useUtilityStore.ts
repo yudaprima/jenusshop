@@ -1,7 +1,7 @@
 import { useCartStore } from './useCartStore';
 import { ref, watch } from "vue";
 import { defineStore } from "pinia";
-import { IProduct } from 'types/product-type';
+import type { IProduct } from 'types/product-type';
 import { useProductStore } from './useProductStore';
 import product_data from '@/data/product-data';
 

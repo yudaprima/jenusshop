@@ -24,8 +24,7 @@
 
 <script setup lang="ts">
 import { computed, ref, onMounted,watch } from "vue";
-import { IProduct } from "@/types/product-type";
-import { IBlogType } from "@/types/blog-type";
+import type { IProduct } from "@/types/product-type";
 const emit = defineEmits(["handlePaginate"]);
 const route = useRoute();
 
@@ -33,7 +32,7 @@ type ItemDataType<T> = {
   data: T[];
   itemsPerPage: number;
 };
-const props = defineProps<ItemDataType<IProduct | IBlogType>>();
+const props = defineProps<ItemDataType<IProduct>>();
 const currentPage = ref<number>(1);
 
 const totalPages = computed(() =>
