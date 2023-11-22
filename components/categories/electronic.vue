@@ -4,10 +4,7 @@
       <div class="row">
         <div class="col-xl-5 col-lg-6 col-md-5">
           <div class="tp-section-title-wrapper mb-40">
-            <h3 class="tp-section-title">
-              Shop Categories
-              <SvgSectionLine />
-            </h3>
+            <h3 class="tp-section-title">Shop Categories</h3>
           </div>
         </div>
       </div>
@@ -42,17 +39,17 @@
 </template>
 
 <script setup lang="ts">
-import category_data from "@/data/category-data";
+import category_data from '@/data/category-data'
 const category_items = category_data.filter(
-  (c) => c.productType === "electronics"
-);
+  (c) => c.productType === 'electronics',
+)
 
-const router = useRouter();
+const router = useRouter()
 // handle parent
 const handleParentCategory = (value: string) => {
-  const newCategory = value.toLowerCase().replace("&", "").split(" ").join("-");
-  router.push(`/shop?category=${newCategory}`);
-};
+  const newCategory = value.toLowerCase().replace('&', '').split(' ').join('-')
+  router.push(`/shop?category=${newCategory}`)
+}
 </script>
 
 <style scoped>

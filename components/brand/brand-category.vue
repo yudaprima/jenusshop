@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12">
           <div class="tp-section-title-wrapper mb-40">
-            <h3 class="tp-section-title">Brand Official <SvgSectionLine /></h3>
+            <h3 class="tp-section-title">Brand Official</h3>
           </div>
         </div>
         <div class="col-xl-12">
@@ -60,47 +60,47 @@
 </template>
 
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation } from 'swiper/modules'
 // brand data
 const brand_data = [
   {
-    logo: "/img/brand/adata.png",
-    link: "shop?brand=adata",
+    logo: '/img/brand/adata.png',
+    link: 'shop?brand=adata',
   },
   {
-    logo: "/img/brand/galax.png",
-    link: "shop?brand=galax",
+    logo: '/img/brand/galax.png',
+    link: 'shop?brand=galax',
   },
   {
-    logo: "/img/brand/lenovo.png",
-    link: "shop?brand=lenovo",
+    logo: '/img/brand/lenovo.png',
+    link: 'shop?brand=lenovo',
   },
   {
-    logo: "/img/brand/logitech.png",
-    link: "shop?brand=logitech",
+    logo: '/img/brand/logitech.png',
+    link: 'shop?brand=logitech',
   },
   {
-    logo: "/img/brand/samsung.webp",
-    link: "shop?brand=samsung",
+    logo: '/img/brand/samsung.webp',
+    link: 'shop?brand=samsung',
   },
   {
-    logo: "/img/brand/sony.png",
-    link: "shop?brand=sony",
+    logo: '/img/brand/sony.png',
+    link: 'shop?brand=sony',
   },
   {
-    logo: "/img/brand/deepcool.webp",
-    link: "shop?brand=deepcool",
+    logo: '/img/brand/deepcool.webp',
+    link: 'shop?brand=deepcool',
   },
   {
-    logo: "/img/brand/apple.png",
-    link: "shop?brand=apple",
+    logo: '/img/brand/apple.png',
+    link: 'shop?brand=apple',
   },
   {
-    logo: "/img/brand/antec.webp",
-    link: "shop?brand=antec",
+    logo: '/img/brand/antec.webp',
+    link: 'shop?brand=antec',
   },
-];
+]
 </script>
 
 <style scoped>

@@ -4,10 +4,7 @@
       <div class="row align-items-end">
         <div class="col-xl-5 col-sm-6">
           <div class="tp-section-title-wrapper mb-40">
-            <h3 class="tp-section-title">
-              New Arrivals
-              <SvgSectionLine />
-            </h3>
+            <h3 class="tp-section-title">New Arrivals</h3>
           </div>
         </div>
         <div class="col-xl-7 col-sm-6">
@@ -73,10 +70,12 @@
 </template>
 
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Pagination, Navigation } from 'swiper/modules'
 
-import product_data from "@/data/product-data";
+import product_data from '@/data/product-data'
 
-const new_arrivals = product_data.filter(p => p.productType === 'electronics').slice(-5);
+const new_arrivals = product_data
+  .filter((p) => p.productType === 'electronics')
+  .slice(-5)
 </script>

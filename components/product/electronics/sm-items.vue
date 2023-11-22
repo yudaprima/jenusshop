@@ -7,7 +7,6 @@
             <div class="tp-section-title-wrapper mb-40">
               <h3 class="tp-section-title tp-section-title-sm">
                 Discount Products
-                <SvgSectionLineSm />
               </h3>
             </div>
 
@@ -25,7 +24,6 @@
             <div class="tp-section-title-wrapper mb-40">
               <h3 class="tp-section-title tp-section-title-sm">
                 Featured Products
-                <SvgSectionLineSm />
               </h3>
             </div>
 
@@ -43,7 +41,6 @@
             <div class="tp-section-title-wrapper mb-40">
               <h3 class="tp-section-title tp-section-title-sm">
                 Selling Products
-                <SvgSectionLineSm />
               </h3>
             </div>
 
@@ -62,18 +59,18 @@
 </template>
 
 <script setup lang="ts">
-import product_data from "@/data/product-data";
+import product_data from '@/data/product-data'
 
-const all_products = product_data;
+const all_products = product_data
 const discount_products = all_products
-  .filter((p) => p.productType === "electronics" && p.discount > 0)
-  .slice(0, 3);
+  .filter((p) => p.productType === 'electronics' && p.discount > 0)
+  .slice(0, 3)
 const featured_products = all_products
-  .filter((p) => p.productType === "electronics" && p.featured)
-  .slice(0, 3);
+  .filter((p) => p.productType === 'electronics' && p.featured)
+  .slice(0, 3)
 const selling_products = all_products
-  .filter((p) => p.productType === "electronics")
+  .filter((p) => p.productType === 'electronics')
   .slice()
   .sort((a, b) => b.sellCount - a.sellCount)
-  .slice(0, 3);
+  .slice(0, 3)
 </script>
